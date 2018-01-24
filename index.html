@@ -10,6 +10,8 @@
     <div class="flex-wrapper">
         <div class="flex-center">
             <h1 id="time"></h1>
+            <h1 id="day"></h1>
+            <h1 id="date"></h1>
         </div>
     </div>
     
@@ -22,12 +24,14 @@
 <script src="moment.js"></script>
 <script>
 (function update(){
-    document.getElementById('time').innerText = moment().format('MMMM Do YYYY, h:mm:ss a');
+    document.getElementById('date').innerText = moment().format('MMMM Do YYYY');
+    document.getElementById('day').innerText = moment().format('dddd');
+    document.getElementById('time').innerText = moment().format('h:mm:ss a');
     setTimeout(update, 1000);
 })();
 </script>
 <script>
-if(false && 'serviceWorker' in navigator){
+if('serviceWorker' in navigator){
     navigator.serviceWorker
         .register('sw.js')
         .then(function() { console.log("Service Worker Registered"); });

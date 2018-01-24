@@ -11,5 +11,8 @@ body{
     text-align: center;
 }
 .flex-center {
-    max-width: 50%;
+}
+
+#time{
+    font-size: 50px;
 }
