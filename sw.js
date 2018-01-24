@@ -3,7 +3,7 @@
 self.addEventListener('install', function(e){
     console.log('service worker install event');
     e.waitUntil(
-      caches.open('offlineapp').then(function(cache){
+      caches.open('offline-clock').then(function(cache){
         return cache.addAll([
           '/',
           '/index.html',
@@ -15,6 +15,8 @@ self.addEventListener('install', function(e){
 //intercept all request and return cached version, if exists
 self.addEventListener('fetch', function(event) {
     console.log(event.request.url);
+
+    console.log('online status ', navigator.onLine);
     
     event.respondWith(
         caches.match(event.request).then(function(response) {

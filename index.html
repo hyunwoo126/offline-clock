@@ -9,8 +9,7 @@
 <body>
     <div class="flex-wrapper">
         <div class="flex-center">
-            <h1>The curren time is</h1>
-            <div id="time"></div>
+            <h1 id="time"></h1>
         </div>
     </div>
     
@@ -28,7 +27,7 @@
 })();
 </script>
 <script>
-if('serviceWorker' in navigator){
+if(false && 'serviceWorker' in navigator){
     navigator.serviceWorker
         .register('sw.js')
         .then(function() { console.log("Service Worker Registered"); });
