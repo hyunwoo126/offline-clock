@@ -1,4 +1,5 @@
 body{
+    margin: 0px;
     font-family: Arial;
 }
 .flex-wrapper {
@@ -16,3 +17,19 @@ body{
 #time{
     font-size: 50px;
 }
+
+.reminder-homescreen{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background-color: #6cc7e4;
+    color: white;
+    padding: 0px 10px;
+}
+
+
+
+@media all and (display-mode: standalone) {
+    .reminder-homescreen {
+      display: none;
+    }
+  }
