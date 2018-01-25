@@ -5,10 +5,10 @@ self.addEventListener('install', function(e){
     e.waitUntil(
       caches.open('offline-clock').then(function(cache){
         return cache.addAll([
-          '/',
-          '/index.html',
-          '/index.css',
-          '/moment.js',
+          '',
+          'index.html',
+          'index.css',
+          'moment.js',
         ]);
       })
     );
