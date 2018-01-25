@@ -32,7 +32,7 @@ body{
 
 
 
-@media all and (display-mode: standalone) {
+@media all and (display-mode: standalone), all and (display-mode: fullscreen), all and (min-width:1281px){
     .reminder-homescreen {
       display: none;
     }
@@ -55,9 +55,6 @@ body{
 @media (min-width:961px){}/* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:1025px){}/* big landscape tablets, laptops, and desktops */
 @media (min-width:1281px){
-    .reminder-homescreen {
-        display: none;
-    }
     #time{
         font-size: 180px;
     }
