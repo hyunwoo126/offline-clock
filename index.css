@@ -23,7 +23,11 @@ body{
     top: 0; left: 0; right: 0;
     background-color: #6cc7e4;
     color: white;
-    padding: 0px 10px;
+    padding: 10px;
+}
+.reminder-homescreen p{
+    display: inline-block;
+    margin: 4px;
 }
 
 
@@ -32,4 +36,29 @@ body{
     .reminder-homescreen {
       display: none;
     }
-  }
+}
+
+
+
+@media (min-width:320px){}/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:375px){}/* iPhone 6 portrait */
+@media (min-width:481px){
+    #time{
+        font-size: 80px;
+    }
+}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:641px){
+    #time{
+        font-size: 100px;
+    }
+}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:961px){}/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:1025px){}/* big landscape tablets, laptops, and desktops */
+@media (min-width:1281px){
+    .reminder-homescreen {
+        display: none;
+    }
+    #time{
+        font-size: 180px;
+    }
+}/* hi-res laptops and desktops */
