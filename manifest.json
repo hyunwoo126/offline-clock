@@ -1,0 +1,12 @@
+{
+    "short_name": "Clock",
+    "name": "Clock - Online / Offline",
+    "icons": [
+      {
+        "src": "img/icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "index.html?utm_source=homescreen"
+  }
